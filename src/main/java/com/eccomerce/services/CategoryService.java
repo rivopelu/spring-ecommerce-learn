@@ -11,8 +11,12 @@ import java.util.UUID;
 
 @Service
 public class CategoryService {
-    @Autowired
+    final
     CategoryRepository categoryRepository;
+
+    public CategoryService(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
 
     public Categories findById(String id) {
         return categoryRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("category Id tidak di temukan"));
