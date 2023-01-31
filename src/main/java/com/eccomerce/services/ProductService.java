@@ -5,8 +5,6 @@ import com.eccomerce.exception.BadRequestException;
 import com.eccomerce.exception.ResourceNotFoundException;
 import com.eccomerce.repositories.CategoryRepository;
 import com.eccomerce.repositories.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.CreatedBy;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
